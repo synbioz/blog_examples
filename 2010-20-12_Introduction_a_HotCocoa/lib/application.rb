@@ -8,9 +8,9 @@ class Application
   include HotCocoa
   
   def start
-    application :name => "Introduction à Hotcocoa" do |app|
+    application :name => "SynbiozFeeds" do |app|
       app.delegate = self
-      window :frame => [100, 100, 500, 500], :title => "Introduction à Hotcocoa" do |win|
+      window :frame => [100, 100, 500, 500], :title => "SynbiozFeeds" do |win|
         win << label(:text => "Hello from HotCocoa", :layout => {:start => false})
         win.will_close { exit }
       end
